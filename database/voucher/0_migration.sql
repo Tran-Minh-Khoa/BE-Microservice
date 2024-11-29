@@ -1,0 +1,26 @@
+DROP TABLE IF EXISTS vouchertemplates;
+
+CREATE TABLE vouchertemplates (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    image VARCHAR(255),
+    value REAL NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    status VARCHAR(255) NOT NULL,
+    brand_id VARCHAR(255) ,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE vouchers (
+    id SERIAL PRIMARY KEY,
+    user_id VARCHAR(255) NOT NULL,
+    qr TEXT NOT NULL,
+    status VARCHAR(255) NOT NULL,
+    voucher_template_id INTEGER NOT NULL,
+    event_id INTEGER NOT NULL,
+    game_id INTEGER NOT NULL,
+    expire DATE NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

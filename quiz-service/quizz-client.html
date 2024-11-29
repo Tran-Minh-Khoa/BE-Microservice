@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Comment Generator</title>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .form-group button {
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Question Comment Generator</h1>
+        <form id="questionForm">
+            <div class="form-group">
+                <label for="question">Câu hỏi:</label>
+                <input type="text" id="question" name="question" required>
+            </div>
+            <div class="form-group">
+                <label for="options">Options:</label>
+                <input type="text" id="options" name="options" placeholder="Comma separated options" required>
+            </div>
+            <div class="form-group">
+                <label for="correctAnswer">Correct Answer:</label>
+                <input type="text" id="correctAnswer" name="correctAnswer" required>
+            </div>
+            <div class="form-group">
+                <label for="comment">Bình luận câu hỏi:</label>
+                <textarea id="comment" name="comment"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="answerComment">Bình luận câu trả lời:</label>
+                <textarea id="answerComment" name="answerComment"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Generate Comment</button>
+            </div>
+        </form>
+        <div>
+            <button id="postData" >
+                Post Data
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('questionForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const question = document.getElementById('question').value;
+            const options = document.getElementById('options').value.split(',').map(opt => opt.trim());
+            const correctAnswer = document.getElementById('correctAnswer').value;
+            const OPENROUTER_API_KEY = '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';
+           
+            // Generate comment for the question
+            let questionPrompt = `${question}?? Help me write a lively comment for the above question in about 2 short sentences with maximum of 50 words. Absolutely do not mention the answer.`;
+            console.log(questionPrompt)
+            let questionResponse = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+                method: 'POST',
+                headers: {
+                    "Authorization": `Bearer ${OPENROUTER_API_KEY}`,
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    "model": "qwen/qwen-2-7b-instruct:free",
+                    "messages": [
+                        { "role": "user", "content": questionPrompt },
+                    ],
+                })
+            });
+            let questionResult = await questionResponse.json();
+            document.getElementById('comment').value = questionResult.choices[0].message.content.trim();
+
+            // Generate comment for the answer
+            let answerPrompt = `${question}?? The answer to the previous question includes 4 options: ${options.join(', ')}. The correct answer is ${correctAnswer}. Please write a comment for this answer. Remember it is only 2 short sentences with maximum of 50 words.`;
+            console.log(answerPrompt)
+            let answerResponse = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+                method: 'POST',
+                headers: {
+                    "Authorization": `Bearer ${OPENROUTER_API_KEY}`,
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    "model": "qwen/qwen-2-7b-instruct:free",
+                    "messages": [
+                        { "role": "user", "content": answerPrompt },
+                    ],
+                })
+            });
+            let answerResult = await answerResponse.json();
+            document.getElementById('answerComment').value = answerResult.choices[0].message.content.trim();
+           
+        });
+        const postData = ()=>{
+            console.log("post Data")
+            const question = document.getElementById('question').value;
+            const options = document.getElementById('options').value.split(',').map(opt => opt.trim());
+            const correctAnswer = document.getElementById('correctAnswer').value;
+            
+            const data = {
+                question: question,
+                options: options,
+                correctAnswer: correctAnswer,
+                scriptPostQuestion: document.getElementById('comment').value,
+                scriptAnswer: document.getElementById('answerComment').value
+            };
+
+            let response = fetch('http://localhost:3030/question/addQuestion', {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            }).then((res)=>{
+                if (response.ok) {
+                alert('Question added successfully!');
+            } else {
+                alert('Failed to add question.');
+            }
+
+            }).catch((error)=>{
+                console.log(error)
+            })
+
+           
+        }
+        var buttonPostData = document.getElementById("postData")
+        buttonPostData.addEventListener("click",postData)
+    </script>
+</body>
+
+</html>

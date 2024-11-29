@@ -1,0 +1,1364 @@
+{
+    "quiz_lists": [
+        {
+            "title": "General Knowledge Quiz 1",
+            "description": "General knowledge questions in quiz 1.",
+            "scriptIntro": {
+                "text": "Welcome to the General Knowledge Quiz Series!",
+                "audioData": "",
+                "duration": 0
+            },
+            "quizzes": [
+                {
+                    "question": "What is the capital of Japan?",
+                    "options": [
+                        "Tokyo",
+                        "Kyoto",
+                        "Osaka",
+                        "Nagoya"
+                    ],
+                    "correctAnswer": "Tokyo",
+                    "scriptPreQuestion": {
+                        "text": "Let's begin with a question about Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the capital of Japan?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Tokyo.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the largest mammal in the world?",
+                    "options": [
+                        "Blue Whale",
+                        "Elephant",
+                        "Giraffe",
+                        "Shark"
+                    ],
+                    "correctAnswer": "Blue Whale",
+                    "scriptPreQuestion": {
+                        "text": "Next, a question about animals.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the largest mammal in the world?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Blue Whale.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Which country is known as the Land of the Rising Sun?",
+                    "options": [
+                        "Japan",
+                        "China",
+                        "Korea",
+                        "Thailand"
+                    ],
+                    "correctAnswer": "Japan",
+                    "scriptPreQuestion": {
+                        "text": "Here's a geography question.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Which country is known as the Land of the Rising Sun?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Who wrote 'To Kill a Mockingbird'?",
+                    "options": [
+                        "Harper Lee",
+                        "J.K. Rowling",
+                        "Mark Twain",
+                        "Ernest Hemingway"
+                    ],
+                    "correctAnswer": "Harper Lee",
+                    "scriptPreQuestion": {
+                        "text": "Now, a question about literature.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Who wrote 'To Kill a Mockingbird'?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Harper Lee.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the chemical symbol for Iron?",
+                    "options": [
+                        "Fe",
+                        "Ir",
+                        "I",
+                        "In"
+                    ],
+                    "correctAnswer": "Fe",
+                    "scriptPreQuestion": {
+                        "text": "Let's see how well you know the periodic table.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the chemical symbol for Iron?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Fe.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "General Knowledge Quiz 2",
+            "description": "General knowledge questions in quiz 2.",
+            "scriptIntro": {
+                "text": "Welcome to the General Knowledge Quiz Series!",
+                "audioData": "",
+                "duration": 0
+            },
+            "quizzes": [
+                {
+                    "question": "What is the capital of Japan?",
+                    "options": [
+                        "Tokyo",
+                        "Kyoto",
+                        "Osaka",
+                        "Nagoya"
+                    ],
+                    "correctAnswer": "Tokyo",
+                    "scriptPreQuestion": {
+                        "text": "Let's begin with a question about Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the capital of Japan?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Tokyo.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the largest mammal in the world?",
+                    "options": [
+                        "Blue Whale",
+                        "Elephant",
+                        "Giraffe",
+                        "Shark"
+                    ],
+                    "correctAnswer": "Blue Whale",
+                    "scriptPreQuestion": {
+                        "text": "Next, a question about animals.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the largest mammal in the world?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Blue Whale.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Which country is known as the Land of the Rising Sun?",
+                    "options": [
+                        "Japan",
+                        "China",
+                        "Korea",
+                        "Thailand"
+                    ],
+                    "correctAnswer": "Japan",
+                    "scriptPreQuestion": {
+                        "text": "Here's a geography question.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Which country is known as the Land of the Rising Sun?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Who wrote 'To Kill a Mockingbird'?",
+                    "options": [
+                        "Harper Lee",
+                        "J.K. Rowling",
+                        "Mark Twain",
+                        "Ernest Hemingway"
+                    ],
+                    "correctAnswer": "Harper Lee",
+                    "scriptPreQuestion": {
+                        "text": "Now, a question about literature.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Who wrote 'To Kill a Mockingbird'?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Harper Lee.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the chemical symbol for Iron?",
+                    "options": [
+                        "Fe",
+                        "Ir",
+                        "I",
+                        "In"
+                    ],
+                    "correctAnswer": "Fe",
+                    "scriptPreQuestion": {
+                        "text": "Let's see how well you know the periodic table.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the chemical symbol for Iron?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Fe.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "General Knowledge Quiz 3",
+            "description": "General knowledge questions in quiz 3.",
+            "scriptIntro": {
+                "text": "Welcome to the General Knowledge Quiz Series!",
+                "audioData": "",
+                "duration": 0
+            },
+            "quizzes": [
+                {
+                    "question": "What is the capital of Japan?",
+                    "options": [
+                        "Tokyo",
+                        "Kyoto",
+                        "Osaka",
+                        "Nagoya"
+                    ],
+                    "correctAnswer": "Tokyo",
+                    "scriptPreQuestion": {
+                        "text": "Let's begin with a question about Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the capital of Japan?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Tokyo.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the largest mammal in the world?",
+                    "options": [
+                        "Blue Whale",
+                        "Elephant",
+                        "Giraffe",
+                        "Shark"
+                    ],
+                    "correctAnswer": "Blue Whale",
+                    "scriptPreQuestion": {
+                        "text": "Next, a question about animals.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the largest mammal in the world?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Blue Whale.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Which country is known as the Land of the Rising Sun?",
+                    "options": [
+                        "Japan",
+                        "China",
+                        "Korea",
+                        "Thailand"
+                    ],
+                    "correctAnswer": "Japan",
+                    "scriptPreQuestion": {
+                        "text": "Here's a geography question.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Which country is known as the Land of the Rising Sun?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Who wrote 'To Kill a Mockingbird'?",
+                    "options": [
+                        "Harper Lee",
+                        "J.K. Rowling",
+                        "Mark Twain",
+                        "Ernest Hemingway"
+                    ],
+                    "correctAnswer": "Harper Lee",
+                    "scriptPreQuestion": {
+                        "text": "Now, a question about literature.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Who wrote 'To Kill a Mockingbird'?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Harper Lee.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the chemical symbol for Iron?",
+                    "options": [
+                        "Fe",
+                        "Ir",
+                        "I",
+                        "In"
+                    ],
+                    "correctAnswer": "Fe",
+                    "scriptPreQuestion": {
+                        "text": "Let's see how well you know the periodic table.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the chemical symbol for Iron?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Fe.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "General Knowledge Quiz 4",
+            "description": "General knowledge questions in quiz 4.",
+            "scriptIntro": {
+                "text": "Welcome to the General Knowledge Quiz Series!",
+                "audioData": "",
+                "duration": 0
+            },
+            "quizzes": [
+                {
+                    "question": "What is the capital of Japan?",
+                    "options": [
+                        "Tokyo",
+                        "Kyoto",
+                        "Osaka",
+                        "Nagoya"
+                    ],
+                    "correctAnswer": "Tokyo",
+                    "scriptPreQuestion": {
+                        "text": "Let's begin with a question about Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the capital of Japan?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Tokyo.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the largest mammal in the world?",
+                    "options": [
+                        "Blue Whale",
+                        "Elephant",
+                        "Giraffe",
+                        "Shark"
+                    ],
+                    "correctAnswer": "Blue Whale",
+                    "scriptPreQuestion": {
+                        "text": "Next, a question about animals.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the largest mammal in the world?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Blue Whale.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Which country is known as the Land of the Rising Sun?",
+                    "options": [
+                        "Japan",
+                        "China",
+                        "Korea",
+                        "Thailand"
+                    ],
+                    "correctAnswer": "Japan",
+                    "scriptPreQuestion": {
+                        "text": "Here's a geography question.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Which country is known as the Land of the Rising Sun?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Who wrote 'To Kill a Mockingbird'?",
+                    "options": [
+                        "Harper Lee",
+                        "J.K. Rowling",
+                        "Mark Twain",
+                        "Ernest Hemingway"
+                    ],
+                    "correctAnswer": "Harper Lee",
+                    "scriptPreQuestion": {
+                        "text": "Now, a question about literature.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Who wrote 'To Kill a Mockingbird'?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Harper Lee.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the chemical symbol for Iron?",
+                    "options": [
+                        "Fe",
+                        "Ir",
+                        "I",
+                        "In"
+                    ],
+                    "correctAnswer": "Fe",
+                    "scriptPreQuestion": {
+                        "text": "Let's see how well you know the periodic table.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the chemical symbol for Iron?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Fe.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "General Knowledge Quiz 5",
+            "description": "General knowledge questions in quiz 5.",
+            "scriptIntro": {
+                "text": "Welcome to the General Knowledge Quiz Series!",
+                "audioData": "",
+                "duration": 0
+            },
+            "quizzes": [
+                {
+                    "question": "What is the capital of Japan?",
+                    "options": [
+                        "Tokyo",
+                        "Kyoto",
+                        "Osaka",
+                        "Nagoya"
+                    ],
+                    "correctAnswer": "Tokyo",
+                    "scriptPreQuestion": {
+                        "text": "Let's begin with a question about Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the capital of Japan?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Tokyo.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the largest mammal in the world?",
+                    "options": [
+                        "Blue Whale",
+                        "Elephant",
+                        "Giraffe",
+                        "Shark"
+                    ],
+                    "correctAnswer": "Blue Whale",
+                    "scriptPreQuestion": {
+                        "text": "Next, a question about animals.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the largest mammal in the world?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Blue Whale.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Which country is known as the Land of the Rising Sun?",
+                    "options": [
+                        "Japan",
+                        "China",
+                        "Korea",
+                        "Thailand"
+                    ],
+                    "correctAnswer": "Japan",
+                    "scriptPreQuestion": {
+                        "text": "Here's a geography question.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Which country is known as the Land of the Rising Sun?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Who wrote 'To Kill a Mockingbird'?",
+                    "options": [
+                        "Harper Lee",
+                        "J.K. Rowling",
+                        "Mark Twain",
+                        "Ernest Hemingway"
+                    ],
+                    "correctAnswer": "Harper Lee",
+                    "scriptPreQuestion": {
+                        "text": "Now, a question about literature.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Who wrote 'To Kill a Mockingbird'?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Harper Lee.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the chemical symbol for Iron?",
+                    "options": [
+                        "Fe",
+                        "Ir",
+                        "I",
+                        "In"
+                    ],
+                    "correctAnswer": "Fe",
+                    "scriptPreQuestion": {
+                        "text": "Let's see how well you know the periodic table.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the chemical symbol for Iron?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Fe.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "General Knowledge Quiz 6",
+            "description": "General knowledge questions in quiz 6.",
+            "scriptIntro": {
+                "text": "Welcome to the General Knowledge Quiz Series!",
+                "audioData": "",
+                "duration": 0
+            },
+            "quizzes": [
+                {
+                    "question": "What is the capital of Japan?",
+                    "options": [
+                        "Tokyo",
+                        "Kyoto",
+                        "Osaka",
+                        "Nagoya"
+                    ],
+                    "correctAnswer": "Tokyo",
+                    "scriptPreQuestion": {
+                        "text": "Let's begin with a question about Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the capital of Japan?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Tokyo.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the largest mammal in the world?",
+                    "options": [
+                        "Blue Whale",
+                        "Elephant",
+                        "Giraffe",
+                        "Shark"
+                    ],
+                    "correctAnswer": "Blue Whale",
+                    "scriptPreQuestion": {
+                        "text": "Next, a question about animals.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the largest mammal in the world?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Blue Whale.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Which country is known as the Land of the Rising Sun?",
+                    "options": [
+                        "Japan",
+                        "China",
+                        "Korea",
+                        "Thailand"
+                    ],
+                    "correctAnswer": "Japan",
+                    "scriptPreQuestion": {
+                        "text": "Here's a geography question.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Which country is known as the Land of the Rising Sun?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Who wrote 'To Kill a Mockingbird'?",
+                    "options": [
+                        "Harper Lee",
+                        "J.K. Rowling",
+                        "Mark Twain",
+                        "Ernest Hemingway"
+                    ],
+                    "correctAnswer": "Harper Lee",
+                    "scriptPreQuestion": {
+                        "text": "Now, a question about literature.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Who wrote 'To Kill a Mockingbird'?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Harper Lee.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the chemical symbol for Iron?",
+                    "options": [
+                        "Fe",
+                        "Ir",
+                        "I",
+                        "In"
+                    ],
+                    "correctAnswer": "Fe",
+                    "scriptPreQuestion": {
+                        "text": "Let's see how well you know the periodic table.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the chemical symbol for Iron?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Fe.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "General Knowledge Quiz 7",
+            "description": "General knowledge questions in quiz 7.",
+            "scriptIntro": {
+                "text": "Welcome to the General Knowledge Quiz Series!",
+                "audioData": "",
+                "duration": 0
+            },
+            "quizzes": [
+                {
+                    "question": "What is the capital of Japan?",
+                    "options": [
+                        "Tokyo",
+                        "Kyoto",
+                        "Osaka",
+                        "Nagoya"
+                    ],
+                    "correctAnswer": "Tokyo",
+                    "scriptPreQuestion": {
+                        "text": "Let's begin with a question about Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the capital of Japan?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Tokyo.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the largest mammal in the world?",
+                    "options": [
+                        "Blue Whale",
+                        "Elephant",
+                        "Giraffe",
+                        "Shark"
+                    ],
+                    "correctAnswer": "Blue Whale",
+                    "scriptPreQuestion": {
+                        "text": "Next, a question about animals.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the largest mammal in the world?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Blue Whale.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Which country is known as the Land of the Rising Sun?",
+                    "options": [
+                        "Japan",
+                        "China",
+                        "Korea",
+                        "Thailand"
+                    ],
+                    "correctAnswer": "Japan",
+                    "scriptPreQuestion": {
+                        "text": "Here's a geography question.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Which country is known as the Land of the Rising Sun?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Who wrote 'To Kill a Mockingbird'?",
+                    "options": [
+                        "Harper Lee",
+                        "J.K. Rowling",
+                        "Mark Twain",
+                        "Ernest Hemingway"
+                    ],
+                    "correctAnswer": "Harper Lee",
+                    "scriptPreQuestion": {
+                        "text": "Now, a question about literature.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Who wrote 'To Kill a Mockingbird'?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Harper Lee.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the chemical symbol for Iron?",
+                    "options": [
+                        "Fe",
+                        "Ir",
+                        "I",
+                        "In"
+                    ],
+                    "correctAnswer": "Fe",
+                    "scriptPreQuestion": {
+                        "text": "Let's see how well you know the periodic table.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the chemical symbol for Iron?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Fe.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "General Knowledge Quiz 8",
+            "description": "General knowledge questions in quiz 8.",
+            "scriptIntro": {
+                "text": "Welcome to the General Knowledge Quiz Series!",
+                "audioData": "",
+                "duration": 0
+            },
+            "quizzes": [
+                {
+                    "question": "What is the capital of Japan?",
+                    "options": [
+                        "Tokyo",
+                        "Kyoto",
+                        "Osaka",
+                        "Nagoya"
+                    ],
+                    "correctAnswer": "Tokyo",
+                    "scriptPreQuestion": {
+                        "text": "Let's begin with a question about Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the capital of Japan?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Tokyo.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the largest mammal in the world?",
+                    "options": [
+                        "Blue Whale",
+                        "Elephant",
+                        "Giraffe",
+                        "Shark"
+                    ],
+                    "correctAnswer": "Blue Whale",
+                    "scriptPreQuestion": {
+                        "text": "Next, a question about animals.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the largest mammal in the world?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Blue Whale.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Which country is known as the Land of the Rising Sun?",
+                    "options": [
+                        "Japan",
+                        "China",
+                        "Korea",
+                        "Thailand"
+                    ],
+                    "correctAnswer": "Japan",
+                    "scriptPreQuestion": {
+                        "text": "Here's a geography question.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Which country is known as the Land of the Rising Sun?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Who wrote 'To Kill a Mockingbird'?",
+                    "options": [
+                        "Harper Lee",
+                        "J.K. Rowling",
+                        "Mark Twain",
+                        "Ernest Hemingway"
+                    ],
+                    "correctAnswer": "Harper Lee",
+                    "scriptPreQuestion": {
+                        "text": "Now, a question about literature.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Who wrote 'To Kill a Mockingbird'?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Harper Lee.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the chemical symbol for Iron?",
+                    "options": [
+                        "Fe",
+                        "Ir",
+                        "I",
+                        "In"
+                    ],
+                    "correctAnswer": "Fe",
+                    "scriptPreQuestion": {
+                        "text": "Let's see how well you know the periodic table.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the chemical symbol for Iron?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Fe.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "General Knowledge Quiz 9",
+            "description": "General knowledge questions in quiz 9.",
+            "scriptIntro": {
+                "text": "Welcome to the General Knowledge Quiz Series!",
+                "audioData": "",
+                "duration": 0
+            },
+            "quizzes": [
+                {
+                    "question": "What is the capital of Japan?",
+                    "options": [
+                        "Tokyo",
+                        "Kyoto",
+                        "Osaka",
+                        "Nagoya"
+                    ],
+                    "correctAnswer": "Tokyo",
+                    "scriptPreQuestion": {
+                        "text": "Let's begin with a question about Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the capital of Japan?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Tokyo.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the largest mammal in the world?",
+                    "options": [
+                        "Blue Whale",
+                        "Elephant",
+                        "Giraffe",
+                        "Shark"
+                    ],
+                    "correctAnswer": "Blue Whale",
+                    "scriptPreQuestion": {
+                        "text": "Next, a question about animals.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the largest mammal in the world?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Blue Whale.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Which country is known as the Land of the Rising Sun?",
+                    "options": [
+                        "Japan",
+                        "China",
+                        "Korea",
+                        "Thailand"
+                    ],
+                    "correctAnswer": "Japan",
+                    "scriptPreQuestion": {
+                        "text": "Here's a geography question.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Which country is known as the Land of the Rising Sun?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Who wrote 'To Kill a Mockingbird'?",
+                    "options": [
+                        "Harper Lee",
+                        "J.K. Rowling",
+                        "Mark Twain",
+                        "Ernest Hemingway"
+                    ],
+                    "correctAnswer": "Harper Lee",
+                    "scriptPreQuestion": {
+                        "text": "Now, a question about literature.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Who wrote 'To Kill a Mockingbird'?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Harper Lee.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the chemical symbol for Iron?",
+                    "options": [
+                        "Fe",
+                        "Ir",
+                        "I",
+                        "In"
+                    ],
+                    "correctAnswer": "Fe",
+                    "scriptPreQuestion": {
+                        "text": "Let's see how well you know the periodic table.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the chemical symbol for Iron?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Fe.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "General Knowledge Quiz 10",
+            "description": "General knowledge questions in quiz 10.",
+            "scriptIntro": {
+                "text": "Welcome to the General Knowledge Quiz Series!",
+                "audioData": "",
+                "duration": 0
+            },
+            "quizzes": [
+                {
+                    "question": "What is the capital of Japan?",
+                    "options": [
+                        "Tokyo",
+                        "Kyoto",
+                        "Osaka",
+                        "Nagoya"
+                    ],
+                    "correctAnswer": "Tokyo",
+                    "scriptPreQuestion": {
+                        "text": "Let's begin with a question about Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the capital of Japan?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Tokyo.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the largest mammal in the world?",
+                    "options": [
+                        "Blue Whale",
+                        "Elephant",
+                        "Giraffe",
+                        "Shark"
+                    ],
+                    "correctAnswer": "Blue Whale",
+                    "scriptPreQuestion": {
+                        "text": "Next, a question about animals.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the largest mammal in the world?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Blue Whale.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Which country is known as the Land of the Rising Sun?",
+                    "options": [
+                        "Japan",
+                        "China",
+                        "Korea",
+                        "Thailand"
+                    ],
+                    "correctAnswer": "Japan",
+                    "scriptPreQuestion": {
+                        "text": "Here's a geography question.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Which country is known as the Land of the Rising Sun?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Japan.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "Who wrote 'To Kill a Mockingbird'?",
+                    "options": [
+                        "Harper Lee",
+                        "J.K. Rowling",
+                        "Mark Twain",
+                        "Ernest Hemingway"
+                    ],
+                    "correctAnswer": "Harper Lee",
+                    "scriptPreQuestion": {
+                        "text": "Now, a question about literature.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "Who wrote 'To Kill a Mockingbird'?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Harper Lee.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                },
+                {
+                    "question": "What is the chemical symbol for Iron?",
+                    "options": [
+                        "Fe",
+                        "Ir",
+                        "I",
+                        "In"
+                    ],
+                    "correctAnswer": "Fe",
+                    "scriptPreQuestion": {
+                        "text": "Let's see how well you know the periodic table.",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptQuestion": {
+                        "text": "What is the chemical symbol for Iron?",
+                        "audioData": "",
+                        "duration": 0
+                    },
+                    "scriptAnswer": {
+                        "text": "The correct answer is Fe.",
+                        "audioData": "",
+                        "duration": 0
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Socket.io Example</title>
+</head>
+
+<body>
+  <h1>Socket.io Chat Room</h1>
+  <input id="roomInput" placeholder="Enter room name">
+  <button id="joinRoom">Join Room</button>
+  <button id="leaveRoom">Leave Room</button>
+  <input id="messageInput" placeholder="Enter message">
+  <button id="sendMessage">Send Message</button>
+  <div style="height: 500px;width: 500px;margin-bottom: 20px;" id="messages"></div>
+  <div style="border-bottom: 1px;border-bottom-color: black;  border-width: 7px;"></div>
+  <h1 style="margin-top: 20px;">socket.io Game quizz</h1>
+  <div id="joinRoomContent"></div>
+  <audio id="audioPlayer" controls></audio>
+
+  <div style="display: flex;">
+    <div id="question"></div>
+    <div id="timer"></div>
+  </div>
+
+
+
+  <div id="options"></div>
+
+  <!-- <script>
+     function joinRoom() {
+      console.log('aaaaaaa')
+      const room = document.getElementById('roomInput').value;
+      console.log(room)
+      // socket.emit('joinRoom', room);
+    }
+
+    function leaveRoom() {
+      const room = document.getElementById('roomInput').value;
+      socket.emit('leaveRoom', room);
+    }
+
+  </script> -->
+  <script type="module">
+    import { io } from "https://cdn.socket.io/4.7.5/socket.io.esm.min.js";
+    const myToken ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJicmFuZEBleGFtcGxlLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMyNzk5MTUxLCJleHAiOjE3MzI4ODU1NTF9.aKMy2b5zZZl9rK9jJjM52YvjJLJ1-011XWTaXUk058o"
+    const socketChat = io("http://localhost", {
+      path:"/socket",
+      extraHeaders: {
+        authorization: `bearer ${myToken}`
+      }
+    })
+
+    // // Khi kết nối được thiết lập
+    socketChat.on('connection', (data) => {
+      console.log(`${data.name} Connected to server`);
+    });
+
+    socketChat.on('message', (message) => {
+      const messagesDiv = document.getElementById('messages');
+      const messageElement = document.createElement('div');
+      messageElement.textContent = `${message.user}: ${message.message}`;
+      messagesDiv.appendChild(messageElement);
+
+    });
+    socketChat.on('error', (error) => {
+      console.error('Error from server:', error.message);
+      // Xử lý thêm nếu cần thiết, ví dụ như điều hướng tới trang đăng nhập
+    });
+    
+    socketChat.on('disconnect',()=>{
+      console.log('Đã disconect từ server')
+    })
+
+
+
+
+
+
+    function joinRoom() {
+      console.log('aaaaaaa')
+      const room = parseInt( document.getElementById('roomInput').value);
+      console.log(room)
+      socketChat.emit('joinRoom', room, (response) => {
+        if (response.status === 'ok') {
+          console.log(response.message);
+        } else {
+          console.error(response.message);
+        }
+      })
+    }
+
+    function leaveRoom() {
+      const room = document.getElementById('roomInput').value;
+      socketChat.emit('leaveRoom', room, (response) => {
+        if (response.status === 'ok') {
+          console.log(response.message);
+        } else {
+          console.error(response.message);
+        }
+      });
+    }
+
+    function sendMessage() {
+      const room = document.getElementById('roomInput').value;
+      const message = document.getElementById('messageInput').value;
+      socketChat.emit('message', room, message, (response) => {
+        if (response.status === 'ok') {
+          console.log(response.message);
+        } else {
+          console.error(response.message);
+        }
+      });
+    }
+
+
+    document.getElementById("joinRoom").addEventListener("click", joinRoom)
+    document.getElementById("leaveRoom").addEventListener("click", leaveRoom)
+    document.getElementById("sendMessage").addEventListener("click", sendMessage)
+  </script>
+</body>
+
+</html>

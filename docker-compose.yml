@@ -1,0 +1,211 @@
+version: '3.8'
+services:
+  api-gateway:
+    container_name: api-gateway
+    build:
+      context: api-gateway
+    ports:
+      - "8000:8000"
+    depends_on:
+      - auth-service
+      - event-service
+      - game-service
+      - quiz-service
+  auth-service:
+    container_name: auth-service
+    build:
+      context: auth-service
+    ports:
+      - "5000:5000"
+    depends_on:
+      - user-db
+  
+  event-service:
+    container_name: event-service
+    build:
+      context: event-service
+    ports:
+      - "3010:3010"
+    depends_on:
+      - event-db
+
+  game-service:
+    container_name: game-service
+    build:
+      context: game-service
+    ports:
+      - "3030:3030"
+    volumes:
+      - .\quiz-service:/usr/src/quiz-service
+      #- /usr/src/quiz-service/node_modules  # Đảm bảo node_modules được sử dụng từ container
+
+    depends_on:
+      - redis
+      - game-db
+  
+  quiz-service:
+    container_name: quiz-service
+    build:
+      context: quiz-service
+    ports:
+      - "3040:3040"
+    depends_on:
+      - quiz-db
+
+  gacha-service:
+      container_name: gacha-service
+      build:
+        context: gacha-service
+      ports:
+        - "3050:3050"
+      depends_on:
+        - gacha-db
+
+  gacha-player-service:
+      container_name: gacha-player-service
+      build:
+        context: gacha-player-service
+      ports:
+        - "3060:3060"
+      depends_on:
+        - gacha-player-db
+
+
+  voucher-service:
+    container_name: voucher-service
+    build:
+      context: vouchers-service
+    ports:
+      - "3020:3020"
+    depends_on:
+      - voucher-db
+    
+  redis:
+    image: docker.io/bitnami/redis:7.2
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
+    ports:
+      - '6379:6379'
+    volumes:
+      - 'redis_data:/bitnami/redis/data'
+
+  game-db:
+    container_name: game-db
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_USER: postgres
+      POSTGRES_DB: game_db
+    volumes:
+      - ./database/game:/docker-entrypoint-initdb.d
+      - postgres-game-data:/var/lib/postgresql/data
+    ports:
+      - '5435:5432'
+
+  gacha-player-db:
+    container_name: gacha-player-db
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_USER: postgres
+      POSTGRES_DB: gacha-player-db
+    volumes:
+      - ./database/gacha-player:/docker-entrypoint-initdb.d
+      - postgres-gacha-player-data:/var/lib/postgresql/data
+    ports:
+      - '5436:5432'
+
+  event-db:
+    container_name: event-db
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_USER: postgres
+      POSTGRES_DB: event_db
+    volumes:
+      - ./database/event:/docker-entrypoint-initdb.d
+      - postgres-event-data:/var/lib/postgresql/data
+    ports:
+      - '5433:5432'
+    
+  real-time-quiz-service:
+    container_name: real-time-quiz-service
+    build:
+      context: real-time-quiz-service
+    ports:
+      - '6000:6000'
+    depends_on:
+      - redis
+
+  user-db:
+    container_name: user-db
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_USER: postgres
+      POSTGRES_DB: user_db
+    volumes:
+      - ./database/user:/docker-entrypoint-initdb.d
+      - postgres-user-data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+
+
+  quiz-db:
+    container_name: quiz-db
+    image: mongo:5.0
+    restart: always
+    volumes:
+      - mongo-quiz-data:/data/db
+    ports:
+      - '27017:27017'
+
+  gacha-db:
+    container_name: gacha-db
+    image: mongo:5.0
+    restart: always
+    volumes:
+      - mongo-gacha-data:/data/db
+    ports:
+      - '28017:27017'
+
+  real-time-quiz-db:
+    container_name: real-time-quiz-db
+    image: mongo:5.0
+    restart: always
+    volumes:
+      - mongo-real-time-quiz-data:/data/db
+    ports:
+      - '27018:27017'
+
+  voucher-db:
+    container_name: voucher-db
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_USER: postgres
+      POSTGRES_DB: voucher-db
+    volumes:
+      - ./database/voucher:/docker-entrypoint-initdb.d
+      - postgres-voucher-data:/var/lib/postgresql/data
+    ports:
+      - '5434:5432'
+
+      
+volumes:
+  redis_data:
+    driver: local
+  postgres-game-data:
+  postgres-event-data:
+  postgres-user-data:  # Thêm định nghĩa cho volume này
+  mongo-real-time-quiz-data:
+  mongo-quiz-data:
+  postgres-voucher-data:
+  mongo-gacha-data:
+  postgres-gacha-player-data:
